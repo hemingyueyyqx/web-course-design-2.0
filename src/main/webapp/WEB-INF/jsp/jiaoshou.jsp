@@ -112,6 +112,10 @@
         .card:hover .card-header img {
             opacity: 1.0;
         }
+        .teacher {
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -131,47 +135,24 @@
         <div class="contents">
             <div class="row">
                 <div class="card">
-                    <h2>李莉</h2>
+
                     <div class="card-header">
-                        <img src="resources/images/teacher1.jpg" alt="" width="300px" height="300px">
+                        <img id="imageToClick1" src="resources/images/teacher1.jpg" alt="" width="300px" height="300px">
                     </div>
-                    <div class="card-content">
-                        <p>
-                            李莉，博士，教授，硕士生导师，东北林业大学青年成栋名师、软件工程专业主任、专业党支部书记。美国加州大学（河滨）访问学者。主持和参加国家级、省部级各类科研、教研项目15项，各级各类获奖10余项，作为第一作者发表SCI、EI、中文核心期刊等论文20余篇、主编教材4部。主持国家级一流本科课程、黑龙江省线上线下精品课程、东北林业大学一流本科课程、东北林业大学重点课程。获得第二届全国高校混合式教学设计创新大赛一等奖、华为产学合作专项奖；2次入选黑龙江省在线教学优秀案例；多次获得东北林业大学教学质量优秀奖、教学改革奖、教书育人先进个人称号。
-                        </p>
-                    </div>
-                    <%--                        <div class="card-footer">--%>
-                    <%--                            <a class="more" href="">Read More</a>--%>
-                    <%--                        </div>--%>
+                    <h2><a href="teacher1" class="teacher">李莉</a></h2>
                 </div>
                 <div class="card">
-                    <h2>邱兆文</h2>
+
                     <div class="card-header">
-                        <img src="resources/images/teacher2.jpg" alt=""  width="300px" height="300px">
+                        <img id="imageToClick2" src="resources/images/teacher2.jpg" alt=""  width="300px" height="300px">
                     </div>
-                    <div class="card-content">
-                        <p>
-                            邱兆文，博士，教授，博士生导师。博士毕业于哈工大，美国卡内基梅隆大学访问学者。东北林业大学三维数字化技术研究所所长。黑龙江省医学影像三维可视化与3D打印工程技术中心主任。拓盟科技董事长。中国计算机学会（CCF）理事，CCF杰出会员，CCF计算机应用专委常务委员，CCF哈尔滨执行委员，中国抗癌协会人工智能专委委员。主要研究方向为人工智能、混合现实。主持参加国家自然科学基金、科技部中央引导地方重大专项基金等18项。国家发明专利5项。主编专著1部。在Nature Machine Intelligence（IF=25.898）等期刊发表SCI论文20篇，H-index为6。获省科技进步三等奖 2项，获省高等教育教学成果二等奖2项。2016年获第五届“中国创新创业大赛”互联网及移动互联网行业企业组第三名 。2020年获第四届“中国创翼”创业创新大赛全国三等奖。2018年入选科技部创新人才推进计划，2019年入选国家万人计划领军人才。2019年获黑龙江省十大杰出创业青年。2022年获第八届“黑龙江省优秀科技工作者”。2020年挑战杯竞赛国赛金奖指导教师。2021年“互联网+”大赛国赛银奖指导教师。哈工大客座教授。
-                        </p>
-                    </div>
-                    <%--                        <div class="card-footer">--%>
-                    <%--                            <a class="more"  href="">Read More</a>--%>
-                    <%--                        </div>--%>
+                    <h2><a href="teacher2" class="teacher">邱兆文</a></h2>
                 </div>
                 <div class="card">
-                    <h2>赵玉茗</h2>
                     <div class="card-header">
-                        <img src="resources/images/teacher3.jpg" alt=""  width="300px" height="300px">
+                        <img id="imageToClick3" src="resources/images/teacher3.jpg" alt=""  width="300px" height="300px">
                     </div>
-                    <div class="card-content">
-                        <p>
-                            赵玉茗，博士，教授，博士生导师。主要研究方向：生物信息学、数据挖掘。中国计算机学会生物信息专委会委员。主持国家自然科学基金面上项目、国家自然科学基金青年基金项目、国家重点研发项目子课题、黑龙江省自然科学基金、林木遗传育种国家重点实验室开放基金、中央高校基本科研业务费专项基金项目等多项科研项目；获得东北林业大学青年教师授课大赛二等奖；主讲精品在线课程1门；获得专利5项；发表学术论文30余篇，其中EI、SCI收录10余篇，参与编写教材1部。美国Indiana University-Purdue University Indianapolis访问学者，美国The Johns Hopkins University博士后访问学者。
-                            所在学科：林业工程（生物学）博导；计算机科学与技术（学硕及专业学位）硕导
-                        </p>
-                    </div>
-                    <%--                        <div class="card-footer">--%>
-                    <%--                            <a class="more"  href="">Read More</a>--%>
-                    <%--                        </div>--%>
+                    <h2><a href="teacher3" class="teacher">赵玉茗</a></h2>
                 </div>
 
             </div>
@@ -179,5 +160,19 @@
 
 </div>
         <%@include file="footer.jsp"%>
+        <script>
+            const image1 = document.getElementById("imageToClick1");
+            image1.addEventListener('click', function () {
+                window.location.href = "teacher1";
+            })
+            const image2 = document.getElementById("imageToClick2");
+            image2.addEventListener('click', function () {
+                window.location.href = "teacher2";
+            })
+            const image3 = document.getElementById("imageToClick3");
+            image3.addEventListener('click', function () {
+                window.location.href = "teacher3";
+            })
+        </script>
 </body>
 </html>

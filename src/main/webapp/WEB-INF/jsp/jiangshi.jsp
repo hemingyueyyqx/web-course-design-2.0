@@ -112,6 +112,10 @@
         .card:hover .card-header img {
             opacity: 1.0;
         }
+        .teacher {
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -130,55 +134,45 @@
         </div>
         <div class="contents">
             <div class="row">
-            <div class="card">
-                <h2>王波</h2>
-                <div class="card-header">
-                    <img src="resources/images/teacher7.jpg" alt="" width="300px" height="300px">
-                </div>
-                <div class="card-content">
-                    <p>
-                        王波，讲师，硕士。主要研究方向：计算数学，软件开发。发表学术论文3篇。
-                    </p>
-                </div>
-                <%--                        <div class="card-footer">--%>
-                <%--                            <a class="more" href="">Read More</a>--%>
-                <%--                        </div>--%>
-            </div>
-            <div class="card">
-                <h2>李琰</h2>
-                <div class="card-header">
-                    <img src="resources/images/teacher8.jpg" alt=""  width="300px" height="300px">
-                </div>
-                <div class="card-content">
-                    <p>
-                        李琰，讲师，主要研究方向：软件工程，遥感和林业信息。参与科研项目多项，参编教材1部，并发表部分相关论文。
-                    </p>
-                </div>
-                <%--                        <div class="card-footer">--%>
-                <%--                            <a class="more"  href="">Read More</a>--%>
-                <%--                        </div>--%>
-            </div>
-            <div class="card">
-                <h2>单颖</h2>
-                <div class="card-header">
-                    <img src="resources/images/teacher9.jpg" alt=""  width="300px" height="300px">
-                </div>
-                <div class="card-content">
-                    <p>
+                <div class="card">
 
-                        单颖，博士，讲师，主要研究方向：软件工程，林业信息。参与科研项目多项，并发表相关论文。
-                    </p>
+                    <div class="card-header">
+                        <img id="imageToClick7" src="resources/images/teacher7.jpg" alt="" width="300px" height="300px">
+                    </div>
+                    <h2><a href="teacher7" class="teacher">王波</a></h2>
                 </div>
-                <%--                        <div class="card-footer">--%>
-                <%--                            <a class="more"  href="">Read More</a>--%>
-                <%--                        </div>--%>
-            </div>
+                <div class="card">
 
+                    <div class="card-header">
+                        <img id="imageToClick8" src="resources/images/teacher8.jpg" alt=""  width="300px" height="300px">
+                    </div>
+                    <h2><a href="teacher8" class="teacher">李琰</a></h2>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img id="imageToClick9" src="resources/images/teacher9.jpg" alt=""  width="300px" height="300px">
+                    </div>
+                    <h2><a href="teacher9" class="teacher">单颖</a></h2>
+                </div>
+
+            </div>
         </div>
-        </div>
+
     </div>
-
-</div>
-<%@include file="footer.jsp"%>
+    <%@include file="footer.jsp"%>
+    <script>
+        const image7 = document.getElementById("imageToClick7");
+        image7.addEventListener('click', function () {
+            window.location.href = "teacher7";
+        })
+        const image8 = document.getElementById("imageToClick8");
+        image8.addEventListener('click', function () {
+            window.location.href = "teacher8";
+        })
+        const image9 = document.getElementById("imageToClick9");
+        image9.addEventListener('click', function () {
+            window.location.href = "teacher9";
+        })
+    </script>
 </body>
 </html>

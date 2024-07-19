@@ -112,6 +112,10 @@
         .card:hover .card-header img {
             opacity: 1.0;
         }
+        .teacher {
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -131,53 +135,44 @@
         <div class="contents">
             <div class="row">
                 <div class="card">
-                    <h2>张锡英</h2>
+
                     <div class="card-header">
-                        <img src="resources/images/teacher4.jpg" alt="" width="300px" height="300px">
+                        <img id="imageToClick4" src="resources/images/teacher4.jpg" alt="" width="300px" height="300px">
                     </div>
-                    <div class="card-content">
-                        <p>
-                            张锡英， 副教授，硕士，硕士生导师。主要研究方向：现代信息技术及网络应用，数据库技术、图像检索。主持或参加科研项目 11 项，发表论文 9 篇，出版教材 2 部。获得省级科学技术进步奖1次， 2 门课精品课主讲教师。
-                        </p>
-                    </div>
-                    <%--                        <div class="card-footer">--%>
-                    <%--                            <a class="more" href="">Read More</a>--%>
-                    <%--                        </div>--%>
+                    <h2><a href="teacher4" class="teacher">张锡英</a></h2>
                 </div>
                 <div class="card">
-                    <h2>谷志新</h2>
+
                     <div class="card-header">
-                        <img src="resources/images/teacher5.jpg" alt=""  width="300px" height="300px">
+                        <img id="imageToClick5" src="resources/images/teacher5.jpg" alt=""  width="300px" height="300px">
                     </div>
-                    <div class="card-content">
-                        <p>
-                            谷志新，博士，副教授，硕士生导师。主持黑龙江省自然科学基金、哈尔滨市应用技术研究与开发项目、中央高校基本科研业务费专项基金项目5项；获得哈尔滨市科技进步三等奖，东北林业大学教学质量优秀奖；主要研究方向：人工智能、信息技术应用。发表科技论文20余篇，其中SCI、EI收录5篇，出版专著1部，主编教材2部。获得专利4项。
-                        </p>
-                    </div>
-                    <%--                        <div class="card-footer">--%>
-                    <%--                            <a class="more"  href="">Read More</a>--%>
-                    <%--                        </div>--%>
+                    <h2><a href="teacher5" class="teacher">谷志新</a></h2>
                 </div>
                 <div class="card">
-                    <h2>刘丹</h2>
                     <div class="card-header">
-                        <img src="resources/images/teacher6.jpg" alt=""  width="300px" height="300px">
+                        <img id="imageToClick6" src="resources/images/teacher6.jpg" alt=""  width="300px" height="300px">
                     </div>
-                    <div class="card-content">
-                        <p>
-                            刘丹，副教授，工学博士，硕士生导师。主要研究方向：无线传感器网络相关技术、数据仓库，数据挖掘。主持或参与科技部支撑计划项目、省自然科学基金项目、省科技攻关项目、哈尔滨科技局项目、中央高校基本可言业务C类项目等科研、教学项目20余项，出版教材7部，发表论文10余篇，其中EI收录论文7篇。获黑龙江省科技进步三等奖1项，省级奖励2项。授权发明专利、实用新型专利、软件著作权10余项。
-                        </p>
-                    </div>
-                    <%--                        <div class="card-footer">--%>
-                    <%--                            <a class="more"  href="">Read More</a>--%>
-                    <%--                        </div>--%>
+                    <h2><a href="teacher6" class="teacher">刘丹</a></h2>
                 </div>
 
             </div>
         </div>
-    </div>
 
-</div>
-<%@include file="footer.jsp"%>
+    </div>
+    <%@include file="footer.jsp"%>
+    <script>
+        const image4 = document.getElementById("imageToClick4");
+        image4.addEventListener('click', function () {
+            window.location.href = "teacher4";
+        })
+        const image5 = document.getElementById("imageToClick5");
+        image5.addEventListener('click', function () {
+            window.location.href = "teacher5";
+        })
+        const image6 = document.getElementById("imageToClick6");
+        image6.addEventListener('click', function () {
+            window.location.href = "teacher6";
+        })
+    </script>
 </body>
 </html>

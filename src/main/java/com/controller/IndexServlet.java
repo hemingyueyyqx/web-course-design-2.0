@@ -1,6 +1,7 @@
 package com.controller;
 
 
+import com.entity.Announcement;
 import com.service.UserService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -9,6 +10,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.util.List;
 
 @WebServlet("/index")
 public class IndexServlet extends HttpServlet {

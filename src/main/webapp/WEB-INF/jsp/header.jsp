@@ -89,9 +89,9 @@
             <a>实验室</a>
             <ul class="dropdown-menu" style="background:#171760;border: none;border-radius: 0;min-width: 150px;text-align: center;list-style: none;
             padding: 0;">
-                <li><a href="sys">923实验室</a></li>
-                <li><a href="sys">925实验室</a></li>
-                <li><a href="sys">916实验室</a></li>
+                <li><a href="sys">923开发与编程实验室</a></li>
+                <li><a href="sys">925软件测试实验室</a></li>
+                <li><a href="sys">916人机交互实验室</a></li>
             </ul>
         </li>
         <li class="dropdown">

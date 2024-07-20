@@ -8,10 +8,10 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet("/sys")
-public class ShiyanshiServlet extends HttpServlet {
+@WebServlet("/sys3")
+public class Shiyanshi3Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/jsp/sys.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jsp/sys3.jsp").forward(req, resp);
     }
 }

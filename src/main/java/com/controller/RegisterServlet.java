@@ -24,7 +24,7 @@ public class RegisterServlet extends HttpServlet {
         if ("admin".equals(userName) && "admin".equals(password)) {
             User u = new User("王小明");
             req.getSession().setAttribute("user", u);
-            url = "/welcome";
+            url = "/allnews";
         } else {
             url = "/register";
         }
